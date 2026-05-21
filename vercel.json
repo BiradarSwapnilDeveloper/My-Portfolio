@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "**",
+            "use": "@vercel/static",
+            "config": {
+                "excludeFiles": [
+                    "server.js",
+                    "package.json",
+                    "package-lock.json",
+                    "node_modules/**"
+                ]
+            }
+        }
+    ]
+}
